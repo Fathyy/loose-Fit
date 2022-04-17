@@ -1,0 +1,61 @@
+/* index styling */
+.all-products{
+    margin-top: 10rem;
+    margin-left: 2rem;
+}
+.card{
+    width: 13rem;
+    margin: 1rem;
+   padding: 0.3125rem;
+}
+.card img{
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+}
+.login-signup a{
+    text-decoration: none;
+    margin-left: 1rem;
+}
+ .wrapper{
+    float: left;
+} 
+.card-action{
+    width: 6.5rem;
+}
+.card-action a{
+    color: white;
+    text-decoration: none;
+}
+/* details styling */
+.image-details{
+    display: flex;
+    justify-content: space-between;
+}
+.left-content{
+    margin-right: 30rem;
+}
+/* footer-news styling */
+.subscribe{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+
+}
+/* introduction styling */
+ .intro-text{
+    margin-top: 20vh;
+} 
+.model-text{
+    max-height: 31.25rem;
+    
+}
+.model-image img{
+    position: absolute;
+    bottom: 4rem;
+    left: 45rem;
+}
