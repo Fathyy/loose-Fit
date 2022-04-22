@@ -11,14 +11,14 @@ require_once('component.php');
 // create instance of CreateDb class
 $database = new CreateDb(dbname:"Productdb", tablename:"Producttb");
 
-if(isset($_POST['add'])){
+if(isset($_POST['name'])){
 
   if(isset($_SESSION['cart'])){
-     $item_array =array_column($_SESSION['cart'], column: "product_id");
+     $item_array_id =array_column($_SESSION['cart'], "product_id");
      
      if(in_array($_POST['product_id'], $item_array_id)){
          echo '<script> alert("Product is already added in the cart..!")</script>';
-         echo "<script>window.location='index.php'</script>";
+         echo "<script> window.location='newindex.php'</script>";
      }
      else{
          $count = count($_SESSION['cart']);
@@ -26,7 +26,7 @@ if(isset($_POST['add'])){
              'product_id' =>$_POST['product_id']
          );
          $_SESSION['cart'][$count] = $item_array;
-         print_r($_SESSION['cart']);
+         
           
      }
   }
@@ -52,7 +52,15 @@ if(isset($_POST['add'])){
     <script src="https://kit.fontawesome.com/ed20622ed8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <?php require_once('header.php');?>
+    <?php 
+    require_once('header.php');
+    require_once('introduction.php');
+    
+    ?>
+
+    
+   
+
     <div class="container">
         <div class="row text-center py-5">
           <?php

@@ -16,7 +16,7 @@
     <div class="container model-text py-5">
         <div class="row">
             <div class="col-sm-9 col-md-8 col-lg-7">
-                <h1 class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, et!</h1>   
+                <h1 class="intro-text">Come shop at affordable prices everyday. Don't miss out on our new brand deals!</h1>   
             </div>
             <div class="col-sm-3 col-md-4 col-lg-5">
                 <div class="model-image">

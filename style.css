@@ -62,10 +62,17 @@ ul li a{
 
 /* newindex styling */
 .bag-two{
-    max-width: 100%;
-    height: auto;
-    background: lightblue;
-    background: radial-gradient(white 30%, lightblue 70% );
+    height: 100px;
+    object-fit: cover;
+    max-width: 100px;
+    
+}
+.card-shadow{
+    margin-right: 1rem;
+    max-width: 13rem;
+    max-height: 13rem;
+    padding: 0.3125rem;
+    border: 1px solid gray;
 }
 
 .fa-star{
@@ -73,8 +80,46 @@ ul li a{
     padding: 3% 0;
 }
 /* header.php styling */
-.cart-count{
+#cart_count{
    text-align: center; 
    padding: 0 0.9rem 0.1rem 0.9rem;
    border-radius: 3rem;
 }
+/* cartt styling */
+.shopping-cart{
+ padding: 3% 0;   
+}
+.cart-items + .cart-items{
+    padding: 2% 0;
+}
+.price-details h6{
+    padding: 3% 2%;
+}
+/* login details folder login.php styling */
+
+        #text{
+            height:1.5625rem;
+            border-radius:0.3125rem;
+            padding:0.25rem;
+            border: solid thin #aaa;
+            width: 100%;
+        }
+
+        #button{
+            padding:0.625rem;
+            width:6.25rem;
+            color:white;
+            background-color: lightblue;
+            border: none;
+        }
+        #box{
+            background-color: grey;
+            margin: auto;
+            width: 18.75rem;
+            padding: 1.25rem;
+        }
+        .login-text{
+            font-size: 1.25rem;
+            margin: 0.625rem;
+            color: white;
+        }
