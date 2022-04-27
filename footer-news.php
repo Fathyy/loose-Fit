@@ -2,9 +2,6 @@
 <?php include 'style.css'; ?>
 </style>
 
-<?php
-include('db_connect.php');
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +17,7 @@ include('db_connect.php');
     <!-- newsletter section begins -->
     
     <footer class="newsletter-form">
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-6">
         <p>Subscribe to our newsletter and get 20% off your first purchase</p>
@@ -42,7 +39,7 @@ include('db_connect.php');
     <!-- newsletter section ends -->
 
     <!-- lower footer section begins -->
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-3">
                 <h3>Loose Fit</h3>

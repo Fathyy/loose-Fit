@@ -51,7 +51,7 @@ if(isset($_POST['remove'])){
                     <?php
                     $total=0;
                     if(isset($_SESSION['cart'])){
-                        $product_id=array_column($_SESSION['cart'],  "product_id");
+                        $product_id=array_column($_SESSION['cart'], "product_id");
 
                     $result=$db->getData();
                     while($row = mysqli_fetch_assoc($result)){

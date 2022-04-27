@@ -1,3 +1,6 @@
+<?php
+require_once('createdb.php');
+?>
 <style>
 <?php include 'style.css'; ?>
 </style>
@@ -19,9 +22,9 @@
                 <h1 class="intro-text">Come shop at affordable prices everyday. Don't miss out on our new brand deals!</h1>   
             </div>
             <div class="col-sm-3 col-md-4 col-lg-5">
-                <div class="model-image">
-                <img src="images\madrona-rose-jFFRk-xyo50-unsplash_prev_ui.png" alt="">
-                </div>
+                <?php
+                $sql="SELECT * FROM introduction-images"
+                ?>
             </div>
         </div>
     </div>

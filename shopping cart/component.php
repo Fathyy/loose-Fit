@@ -6,10 +6,9 @@ function component($productname, $productprice,$productimage, $productid){
     $element="
     <div class='col-sm-6 col-md-4 my-3 my-md-0'>
     <form action='newindex.php' method='post'>
-                    <div class='card-shadow'>
-                        <div>
-                            <img src='$productimage' class='bag-two' alt='image1' card-img-top' w-10 h-5 >
-                        </div>
+                    <div class='card'> 
+                            <img src='$productimage' alt='image1' card-img-top img-fluid'>
+                        
                         <div class='card-body'>
                             <h5 class='card-title'>$productname</h5>
                             <h6>
@@ -29,6 +28,7 @@ function component($productname, $productprice,$productimage, $productid){
                             <button type='submit' class='btn btn-warning my-3' name='name'>Add to Cart <i class='fa-solid fa-cart-shopping'></i></button>
                             <input type='hidden' name='product_id' value='$productid'>
                         </div>
+                    
                     </div>
 
                 </form>
