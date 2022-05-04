@@ -1,0 +1,72 @@
+/* header styling begins */
+body{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: aqua;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-text{
+    font-size: 20px;  
+}
+ul{
+    display: flex;
+    margin-right: 10px;
+    list-style-type: none;
+    font-size: 20px;
+}
+li{
+padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* header styling ends */
+
+/* signup styling begins */
+.signup-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.signup-form-form{
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 500px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+form input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border-width: thin;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+form button {
+    padding: 10px;
+    margin-top: 10px;
+    background: linear-gradient(to right, rgb(165, 168, 227),rgb(36, 45, 213));
+    color: white;
+    border-radius: 7px;
+    border-width: thin;
+    font-size: 15px;
+    font-weight: 600;
+}
+button:focus,
+button:active{
+    background:linear-gradient(to right, rgb(227, 165, 216),rgb(209, 11, 192)) ;
+}
+/* signup styling */
