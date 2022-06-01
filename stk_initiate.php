@@ -10,9 +10,9 @@ if(isset($_POST['checkout'])){
 
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
-  $total = $_POST['total'];
   $BusinessShortCode = '174379';
-  $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';  
+  $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'; 
+   
   
   /*
     This are your info, for
@@ -24,10 +24,10 @@ if(isset($_POST['checkout'])){
     for developer/test accounts, this money will be reversed automatically by midnight.
   */
   
-  
+   
   $AccountReference = '2255';
   $TransactionDesc = 'Test Payment';
-  
+  $total = $_POST['total'];;
  
   # Get the timestamp, format YYYYmmddhms -> 20181004151020
   $Timestamp = date('YmdHis');    
@@ -43,7 +43,7 @@ if(isset($_POST['checkout'])){
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = 'https://fathyy.github.io/loose-Fit//callback_url.php';  
+  $CallBackURL = 'https://vast-retreat-66205.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
@@ -52,12 +52,11 @@ if(isset($_POST['checkout'])){
   curl_setopt($curl, CURLOPT_USERPWD, $consumerKey.':'.$consumerSecret);
   $result = curl_exec($curl);
   $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-  $result = json_decode($result);
-  $access_token = $result->access_token;  
+  $result = json_decode($result); 
   curl_close($curl);
 
   # header for stk push
-  $stkheader = ['Content-Type:application/json','Authorization:Bearer '.$access_token];
+ 
 
   # initiating the transaction
   $curl = curl_init();
@@ -70,8 +69,10 @@ if(isset($_POST['checkout'])){
     'Password' => $Password,
     'Timestamp' => $Timestamp,
     'TransactionType' => 'CustomerPayBillOnline',
+    'total' => $total,
     'PartyB' => $BusinessShortCode,
     'CallBackURL' => $CallBackURL,
+    'AccountReference' => $AccountReference,
     'TransactionDesc' => $TransactionDesc
   );
 

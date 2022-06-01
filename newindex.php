@@ -57,9 +57,6 @@ if(isset($_POST['name'])){
     
     ?>
 
-       
-   
-
     <div class="container">
         <div class="row text-center py-5">
           <?php
@@ -68,12 +65,7 @@ if(isset($_POST['name'])){
               component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
           }
           
-          ?>  
-
-
-            
-
-            
+          ?>   
 
         </div>
     </div>

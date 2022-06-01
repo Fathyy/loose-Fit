@@ -6,21 +6,18 @@ function component($productname, $productprice,$productimage, $productid){
     $element="
     <div class='col-sm-6 col-md-4 my-3 my-md-0'>
     <form action='newindex.php' method='post'>
-                    <div class='card'> 
+                    <div class='card style-card'> 
                             <img src='$productimage' alt='image1' card-img-top img-fluid'>
                         
                         <div class='card-body'>
                             <h5 class='card-title'>$productname</h5>
-                            <h6>
+                            <h6 class='ratings'>
                             <i class='fa-solid fa-star'></i>  
                             <i class='fa-solid fa-star'></i>  
                             <i class='fa-solid fa-star'></i>  
                             <i class='fa-solid fa-star'></i>  
                             <i class='fa-solid fa-star'></i>  
                             </h6>
-                            <p class='card-text'>
-                                Some text to build on the card
-                            </p>
                             <h5>
                                 <small><s class='text-secondary'>Ksh500</s></small>
                                <span class='price'>$productprice</span> 

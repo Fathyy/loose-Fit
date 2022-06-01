@@ -6,7 +6,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="newindex.php" class="navbar-brand">
             <h3 class="px-5">
-            <i class='fa-solid fa-cart-shopping'></i>Loose Fit
+            <i class='fa-solid fa-cart-shopping'></i>Loose Fit Shop
             </h3>
         </a>
         <button class="navbar-toggler"

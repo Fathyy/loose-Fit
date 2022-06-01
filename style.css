@@ -125,3 +125,9 @@ ul li a{
             margin: 0.625rem;
             color: white;
         }
+        .style-card{
+            margin-bottom: 150px;
+        }
+        .ratings{
+            margin-top: 20px;
+        }

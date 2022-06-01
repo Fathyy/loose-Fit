@@ -107,8 +107,8 @@ if(isset($_POST['remove'])){
                         </div>
                         
                         <form action="stk_initiate.php" method="post">
-                            <input type="text" name="total" class="<?php echo $total;?>">
-                        <button type="submit" name="checkout" class="btn-large btn btn-primary">Proceed to checkout</button>
+                            <input type="hidden" value="<?php echo $total;?>" name="total">
+                        <input type="submit" name="checkout" class="btn-large btn btn-primary" value="proceed to checkout">
                         </form>
                     </div> 
                 </div>
